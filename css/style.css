@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    /* background-color: #000075; */
+    /* background-color: #ff9922; */
+    background-color: #ccc;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    margin-right: .5em;
+}
+
+#passwordGeneratorSection {
+    display: flex;
+    flex-direction: column;
+}
+
+#passwordGeneratorSection h1 {
+    text-align: start;
+    margin-left: 2%;
+    font-size: 2rem;
+}
+
+#passwordInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#password-strength {
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+/* #strengthIcon {
+    background-color: yellow;
+} */
+
+#hackInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2%;
+}
+
+#passwordArea {
+    /* max-width: 75%; */
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+    margin-left: 2%;
+    max-width: 100%;
+    border-bottom: 5px solid #ff9922;
+    margin-top: 2%;
+    /* color: white; */
+}
+
+#password {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    align-self: end;
+    width: 100%;
+    max-width: 90%; /* Ensure it doesn’t exceed the width of its container */
+    height: 40px; /* Set a fixed height */
+    border: 1px solid #ccc; /* Optional: add a border for visibility */
+    /* overflow: hidden; /* Hide any overflowing content */
+    overflow: auto; /* Scroll overflowing content */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    /* white-space: normal; /* Normal */
+    /* text-overflow: ellipsis; /* Show an ellipsis (...) for overflowed text */
+    /* padding: 0.625rem; /* Padding in rem */
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 2rem; /* Initial font size */
+}
+
+#passwordArea #generate-btn {
+    /*height: 40px; /* Set a fixed height */
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    /* width: 20%; */
+    /* max-width: 700px; */
+    /* max-width: 100%; */
+    /* max-width: 80px; */
+} 
+
+#generate-btn {
+    background-color: #000075;
+    
+}
+
+#copy-btn {
+    max-width: 100%;
+    max-width: 700px;
+    height: 80px;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: x-large;
+    align-self: flex-end;
+}
+
+#entireSliderInputArea {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 7%;
+}
+
+#sliderLabelInput {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    /* width: 60%; */
+}
+
+
+
+#sliderLabelInput label {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+
+#password-length {
+    width: 40px;
+    height: 20px;
+    height: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    /* margin-top: auto; */
+}
+
+#advancedSettings {
+    /* margin-right: 2%; */
+    margin-left: 2%;
+}
+
+#individualAdvancedSettingsDiv {
+    margin-left: 2%;
+}
+
+
+footer {
+    max-width: 100%;
+    margin-top: 5%;
+}

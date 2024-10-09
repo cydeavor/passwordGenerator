@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="icon" type="ico" href="../assets/logo.png"> -->
+</head>
+<body>
+    <section id="passwordGeneratorSection">
+    <h1>Cryptographic Password Generator</h1>
+
+    <!-- Password strength display -->
+    <!-- <div id="password-strength"></div> -->
+    <div id="passwordInfo">
+        <div id="password-strength">
+            <!-- <h3>Password Strength:</h3>
+            <strong><p>Strong</p></strong>
+            <img id="strengthIcon" src="../assets/icons/shield.svg" alt="Icon representing password strength for security assessment." width="40px" height="40px"> -->
+        </div>
+        <div id="hackInfo">
+            <h3>Estimated Time to Hack Password:</h3>
+            <strong><div id="password-hack-time"></div></strong>
+        </div>
+    </div>
+
+    <!-- Generated password display -->
+    <!-- <h3 id="password"></h3> -->
+    <div id="passwordArea">
+        <div id="password"></div>
+        <!-- <div id="refreshPassword"><img src="../assets/refresh.svg" alt="generate a new password"></div> -->
+        <!-- Button to generate the password -->
+        <button id="generate-btn"><img src="./refresh.svg" alt="generate a new password"></button>
+    </div>
+
+
+    <!-- Copy to clipboard button -->
+    <button id="copy-btn">Copy Password</button>
+
+    
+    <!-- Password length input -->
+
+        <div id="entireSliderInputArea">
+            <div id="sliderLabelInput">
+                <label for="password-length"><strong>Password Length:</strong></label>
+                <input type="number" id="password-length" value="16" min="4" max="50">
+            </div>
+            <input type="range" id="password-slider" min="4" max="50" value="16">
+        </div>
+    <!-- ********REMOVE THIS ASAP *************** Styles in the stylesheet. Needs adjustment in JavaScript **************** Remove this ASAP -->
+    <!-- <span style="display: none;" id="length-display">16</span> -->
+
+    
+
+    <!-- Checkboxes for character set selection -->
+    <div id="advancedSettings">
+        <h3>Advanced Settings</h3>
+        <div id="individualAdvancedSettingsDiv">
+            <div id="password-entropy"></div>
+            <label>
+                <input type="checkbox" id="include-numbers" checked> Numbers: 0-9
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="include-lowercase" checked> Lower Case: a-z
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="include-uppercase" checked> Upper Case: A-Z
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" id="include-symbols" checked> Symbols: !@#$%^&*()
+            </label>
+        </div>
+    </div>
+    </section>
+    <footer>© 2024 Cydeavor. All Rights Reserved. Use at your own risk.</footer>
+    <!-- External JS file linked -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
